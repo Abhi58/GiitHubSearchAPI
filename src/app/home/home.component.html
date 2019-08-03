@@ -1,0 +1,32 @@
+<div  class="intro-header col-xs-3" style="left:40%; padding-top:10%; color:black">
+  <h3>Github Repository Manager</h3>
+
+  <input  class="form-control" type="text" [(ngModel)]="username" placeholder="enter username" value="" />
+  <br>
+  <button class="btn btn-primary">
+    <a [routerLink]="['/user', username]" style="color: white"> Search user</a>
+  </button>
+
+  <!-- <button (click)="fetch_user_data()">Get User Data</button> -->
+
+  <!-- <div *ngIf="userdata">
+    {{userdata.name}}
+    <user-org-detail [userdata]="userdata"></user-org-detail>
+  </div> -->
+
+  <!-- <button (click)="put_rqst()">put rqst</button> -->
+
+  <br>  <br>  <br>
+  <input class="form-control" type="text" [(ngModel)]="repo_keyword" placeholder="enter repository name or keyword" value=""/>
+  <br>
+  <button class="btn btn-primary">
+      <a [routerLink]="['/repo_search', repo_keyword]" style="color: white"> Search Repository</a>
+  </button>
+
+  <!-- <br><br><br>
+  <input class="form-control" type="text" [(ngModel)]="repo_keyword_lang" placeholder="enter repo lang or keyword" value="daru-view"/>
+  <br>
+  <button>
+      <a [routerLink]="['/repo_search', {lang: repo_keyword_lang}]"> Search the repo</a>
+  </button> -->
+</div>

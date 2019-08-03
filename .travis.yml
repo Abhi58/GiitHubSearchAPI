@@ -13,5 +13,5 @@ script:
 #   - ./deploy.sh
 deploy:
   provider: surge
-  project: ./dist
+  project: ./
   domain: https://github-search.surge.sh

@@ -53,6 +53,6 @@
   },
   "git": { 
     "scripts": 
-      { "pre-push": "ng build && surge --project ./dist --domain https://github-search-api.surge.sh/" }
+      { "pre-push": "ng build --prod && surge --project ./dist --domain https://github-search-api.surge.sh/" }
   }
 }

@@ -8,6 +8,10 @@ script:
   - npm i -g surge
   - ng build
 
-after_success:
-  - chmod ugo+x ./deploy.sh
-  - ./deploy.sh
+# after_success:
+#   - chmod ugo+x ./deploy.sh
+#   - ./deploy.sh
+deploy:
+  provider: surge
+  project: ./dist
+  domain: https://github-search.surge.sh

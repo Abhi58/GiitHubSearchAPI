@@ -11,7 +11,11 @@ script:
 # after_success:
 #   - chmod ugo+x ./deploy.sh
 #   - ./deploy.sh
+after_success:
+  - surge --project ./dist --domain https://githubapi.surge.sh
+
 deploy:
   provider: surge
-  project: ./
-  domain: https://github-search.surge.sh
+  project: ./dist
+  domain: https://githubapi.surge.sh
+

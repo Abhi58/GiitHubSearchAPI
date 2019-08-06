@@ -24,7 +24,7 @@ export class RepoSearchComponent implements OnInit {
     console.log(this.repo_list);
 
     this.route.params.subscribe(
-      params => {
+      (params:any) => {
         this.repo_keyword = params['repo_keyword'];
         // this.repo_lang = params['lang'] || '';
         // console.log(this.repo_lang);

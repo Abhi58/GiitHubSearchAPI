@@ -3,6 +3,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { GithubService } from '../github.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,6 +13,7 @@ export class HomeComponent implements OnInit {
 
   @Input() username: string;
   userdata: any;
+  repo_keyword: any;
 
   constructor(private githubService: GithubService) { }
 

@@ -50,6 +50,9 @@
     "tslint": "~5.3.2",
     "typescript": "~2.3.3",
     "git-scripts": "0.2.1"   
+  },
+  "git": { 
+    "scripts": 
+      { "pre-push": "ng build --prod && surge --project ./dist --domain https://github-search-api.surge.sh/" }
   }
-
 }

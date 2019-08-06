@@ -1,10 +1,10 @@
 <div  class="intro-header col-xs-3" style="left:40%; padding-top:10%; color:black">
   <h3>Github Repository Manager</h3>
-
+  <br> <br>
   <input  class="form-control" type="text" [(ngModel)]="username" placeholder="enter username" value="" />
   <br>
   <button class="btn btn-primary">
-    <a [routerLink]="['/user', username]" style="color: white"> Search user</a>
+    <a [routerLink]="['/user', username]" style="color: white;text-decoration: none"> Search user</a>
   </button>
 
   <!-- <button (click)="fetch_user_data()">Get User Data</button> -->
@@ -20,7 +20,7 @@
   <input class="form-control" type="text" [(ngModel)]="repo_keyword" placeholder="enter repository name or keyword" value=""/>
   <br>
   <button class="btn btn-primary">
-      <a [routerLink]="['/repo_search', repo_keyword]" style="color: white"> Search Repository</a>
+      <a [routerLink]="['/repo_search', repo_keyword]" style="color: white; text-decoration: none"> Search Repository</a>
   </button>
 
 
